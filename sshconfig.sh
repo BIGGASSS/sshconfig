@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# Check if the user has provided a public key as an argument
-if [ -z "$1" ]; then
-  echo "Usage: $0 \"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINetVzRgShomRm/5j/Hp6ohRqMrpUMmIC1ymFHSAaw1p secon@timcook\""
-  exit 1
-fi
+
+
 
 # Assign the provided public key to a variable
-PUBLIC_KEY="$1"
+PUBLIC_KEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINetVzRgShomRm/5j/Hp6ohRqMrpUMmIC1ymFHSAaw1p secon@timcook"
 
 # Make sure the .ssh directory exists
 mkdir -p ~/.ssh
